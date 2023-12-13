@@ -1,0 +1,12 @@
+__pycache__
+*.py[cod]
+.DS_Store
+
+*.so
+
+bin/
+build/
+lib/
+lib64
+
+*/usagov_bitly_data2012-03-16-1331923249.txt
