@@ -11,20 +11,20 @@ a dictionary, series, html, etc. Can also take a variety of args to construct a 
 ### Basic dataframe methods - reading data
 
 Reading data into dataframe via json records
-`
-filePath = usr/example/filepath
 
-records = [json.load(line) for line in open(filePath)]
+`filePath = usr/example/filepath`
 
-frame = DataFrame(records)
-`
+`records = [json.load(line) for line in open(filePath)]`
+
+`frame = DataFrame(records)`
+
 
 Reading data into df via csv
-`
-headerNames = ['example', 'headers', 'for', 'columns']
 
-df = pd.read_table('usr/example/filePath', sep = ::, engine = 'python', header = None, names = headerNames)
-`
+`headerNames = ['example', 'headers', 'for', 'columns']`
+
+`df = pd.read_table('usr/example/filePath', sep = ::, engine = 'python', header = None, names = headerNames)`
+
 
 These will be most common, but pandas is also able to read data via excel, sql, html, and more.
 
@@ -33,15 +33,15 @@ These will be most common, but pandas is also able to read data via excel, sql, 
 After reading in data to a dataframe, there are many inbuilt methods used to manipulate the data
 
 View first ten records:
-`
-df = DataFrame(exampleRecords)
 
-df.head(10)
-`
+`df = DataFrame(exampleRecords)`
+
+`df.head(10)`
+
 Similarly for the last ten
-`
-df.tail(10)
-`
+
+`df.tail(10)`
+
 
 
 
